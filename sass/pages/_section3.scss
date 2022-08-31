@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Section3 -  Welcome section
+--------------------------------------------------------------*/
+
+.welcome-section{
+    margin-top: 7rem;
+
+    &_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &_subtext{
+            color: $color-secondary;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+
+            &:before{
+                content: "";
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                background-color: #F0E6E0;
+                border-radius: 5px;
+                z-index: -1;
+                bottom: -1rem;
+                left: -2rem;
+                @include respond(small) {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            &:after{
+                content:'';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #F0E6E0;
+                border:2.5px solid #fff;
+                border-radius: 5px;
+                z-index: 0;
+                bottom: 2.5rem;
+                left: 1.5rem;
+
+                @include respond(small){
+                    bottom: 3rem;
+                }
+            }
+        }
+        h2{
+            margin-top:1rem;
+            font-size: 3.8rem;
+            @include respond(small) {
+                font-size: 3rem;
+            }
+        }
+        p{
+            width:40rem;
+            text-align: center;
+        }
+    }
+    &_content-wrapper{
+        margin-top: 3rem;
+        display: flex;
+        gap:2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .image{
+            
+            flex: 1 1 48%;
+
+            img{
+                width:100%
+            }
+            // @include respond(small) {
+            //     img{
+            //         width: 290px;
+            //     }
+            // }
+            // @include respond(large) {
+            //     img{
+            //         width: 550px;
+            //     }
+            // }
+            // @include respond(larger) {
+            //     img{
+            //         width: 600px;
+            //     }
+            // }
+
+        }
+        .side-content{
+            flex:1 1 50%;
+
+            &_subtext{
+                color: $color-secondary;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            h3{
+                font-size: 3rem;
+                line-height: 4rem;
+                margin: 1rem 0;
+            }
+
+            &_icons{
+                margin-top: 5rem;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: $color-primary;
+                    text-align: left;
+                }
+                img{
+                    height: 100%;
+                }
+                &_A{
+                    display: flex;
+                    height: 100%;
+                    
+                }
+                &_B{
+                    display: flex;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

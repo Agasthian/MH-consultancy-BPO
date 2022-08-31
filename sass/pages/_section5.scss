@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Section5 -  section
+--------------------------------------------------------------*/
+.nonitServices-section{
+    
+
+    height: 80vh;
+    margin-top: 10rem;
+    display: flex;
+    @include respond(small) {
+        flex-direction: column;
+    }
+
+    &_left{
+        flex: 1 1 40%;
+        background: url('../../img/10.jpg')no-repeat;
+        background-size: contain;
+ 
+     }
+     &_right{
+         
+         flex: 1 1 60%;
+         padding: 4rem 5rem;
+     }
+
+     p{
+        margin-bottom: 2rem;
+    }
+}

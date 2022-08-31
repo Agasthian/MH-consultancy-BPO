@@ -1,0 +1,15 @@
+{
+  "name": "mhconsultancy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Agasthian",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "node-sass": "^7.0.1"
+  }
+}

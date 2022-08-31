@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+# section 6 -   About section
+--------------------------------------------------------------*/
+
+.about-section{
+    margin-top: 15rem;
+    position: relative;
+    
+    &_bg-img{
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        background-image: url('../../img/PatterNew5.png');    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: -2;
+        top: 423px;
+        @include respond(small) {
+            top:245px
+        }
+        
+    }
+        
+    &_content_box{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        box-shadow: 0 0 20px 0 #cecece;
+        border-radius: 10px;
+
+        @include respond(small) {
+            flex-wrap: wrap;
+        }
+
+        &_left{
+
+            flex: 1 1 55%;
+            display: flex;
+            flex-direction: column;
+
+            .image-box{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .inner-box{
+                background-color: $color-primary;
+                height:100%;
+                padding:4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                @include respond(small) {
+                    height: 45rem;
+                }
+
+                img{
+                    @include respond(small) {
+                        width: 10rem;
+                    }
+                }
+                h3{
+                    color:#fff;
+                    font-size: 2rem;
+                    width: 20rem;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &_right{
+            flex: 1 1 45%;
+            padding: 6rem;
+            background-color: #fff;
+            h2{
+                margin: 0rem 0px 2rem 0;
+                font-size: 3rem;
+            }
+
+            .auth-box{
+                margin-top: 5rem;
+                background-color: #F0E6E0;
+                border-radius: 25px;
+                padding: 4rem 5rem;
+                justify-content: center;
+                @include respond(small) {
+                    border-radius: 15px;
+                }
+
+                h3{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

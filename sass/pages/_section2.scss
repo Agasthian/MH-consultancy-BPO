@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+# Section2 - Client section
+--------------------------------------------------------------*/
+.client-section{
+    min-height: 15rem;
+    padding: 2rem;
+    width:100%;
+    background-color: $color-primary;
+
+    &_flex-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    @include respond(small) {
+        height: 30rem;
+
+        img{
+            width:15rem;
+        }
+    }
+}

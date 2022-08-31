@@ -1,0 +1,131 @@
+.header{
+	z-index: 999;
+    position: fixed;
+    width: 100%;
+
+	.header-flex_wrappr {
+		position: relative;
+		background-color:$color-background;
+		color: $color-primary;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 13vh;
+		-webkit-box-shadow: 0 0 20px 0 #cecece;
+		box-shadow: 0 0 20px 0 #cecece;
+	
+		@include respond(small) {
+			min-height: 8vh;
+		}
+		@include respond(tab-port) {
+			flex-wrap: wrap;
+		}
+		@include respond(largest) {
+			//width < 1920px
+			min-height: 8vh;
+		}
+	
+		.logo {
+			padding:14px 20px 15px 35px;
+			background: $color-primary;
+			border-bottom-right-radius: 25px;
+			@include respond(tab) {
+				padding: 33px 5px;
+			}
+			@include respond(tab-land) {
+				padding: 15px 10px;
+			}
+	
+			img{
+				width: 80%;
+				@include respond(small) {
+					width: 150px;	
+				}
+			}
+		}
+	
+		ul.main-nav {
+			display: flex;
+			width: 65%;
+			justify-content: space-around;		
+			
+	
+			li{
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 1.4rem;
+				transition: ease-in 0.2s all;
+	
+				&:hover{
+					color:$color-secondary;
+					transition: ease-out 0.2s all;
+				}
+			}
+	
+			@include respond(tab-port) {
+				display: none;
+			}
+		}
+	
+		ul.main-nav.show{
+			@include respond(tab-port) {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				background: #f0e6e0;
+				height: 25vh;
+				z-index: 5;
+				position: relative;
+				transition: all 1s ease-out;
+			}
+		}
+	
+		#hamburger{
+			display: none;
+	
+			@include respond(tab-port) {
+				display: block;
+				margin-right: 2rem;
+				font-size: 4rem;
+				background-color: transparent;
+				color: $color-primary;
+				border: none;
+				width: 7rem;
+				cursor: pointer;
+	
+			}
+	
+			&:focus{
+				outline: none;
+			}
+		}
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	.main-nav a {
+		color: #34495e;
+		font-size: .99em;
+	}
+	
+	.main-nav a:hover {
+		color: #718daa;
+	}
+	
+	
+	
+
+}	
+
