@@ -2,7 +2,7 @@
 # Section3 -  Welcome section
 --------------------------------------------------------------*/
 
-.welcome-section{
+.about-section{
     margin-top: 7rem;
 
     &_heading{
@@ -24,7 +24,6 @@
                 height: 50px;
                 width: 50px;
                 background-color: #F0E6E0;
-                border-radius: 5px;
                 z-index: -1;
                 bottom: -1rem;
                 left: -2rem;
@@ -41,7 +40,6 @@
                 width: 25px;
                 background-color: #F0E6E0;
                 border:2.5px solid #fff;
-                border-radius: 5px;
                 z-index: 0;
                 bottom: 2.5rem;
                 left: 1.5rem;
