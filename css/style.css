@@ -185,10 +185,39 @@ p {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
 
+.heading_wrapper {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  height: 15rem;
+  width: 100%;
+  background-color: #ac7b50;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .heading_wrapper h1 {
+    color: #fff;
+    font-size: 2.8rem; }
+
+.services_page_wrapper {
+  margin-bottom: 5rem; }
+  .services_page_wrapper h3 {
+    font-size: 2rem; }
+  .services_page_wrapper hr {
+    width: 20rem;
+    margin-bottom: 3rem;
+    border: 1px solid #ac7b50; }
+  .services_page_wrapper_content {
+    display: flex; }
+    .services_page_wrapper_content img {
+      width: 400px;
+      margin-right: 3rem;
+      margin-bottom: 3rem; }
+
 .header {
   z-index: 999;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
   .header .header-flex_wrappr {
     position: relative;
     background-color: #F7F8F3;
@@ -217,11 +246,15 @@ p {
             width: 150px; } }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
-      width: 65%;
+      width: 45%;
       justify-content: space-around; }
       .header .header-flex_wrappr ul.main-nav li {
-        list-style: none; }
+        position: relative;
+        list-style: none;
+        display: inline-block; }
       .header .header-flex_wrappr ul.main-nav a {
+        color: #34495e;
+        padding: 1rem 2rem;
         text-decoration: none;
         display: block;
         text-transform: uppercase;
@@ -229,11 +262,24 @@ p {
         font-size: 1.4rem;
         transition: ease-in 0.2s all; }
         .header .header-flex_wrappr ul.main-nav a:hover {
-          color: #ac1f2d;
+          background: #ac7b50;
+          color: #e1e0e0;
           transition: ease-out 0.2s all; }
       @media (max-width: 48em) {
         .header .header-flex_wrappr ul.main-nav {
           display: none; } }
+      .header .header-flex_wrappr ul.main-nav li:hover > ul {
+        display: block;
+        transition: ease-out 0.2s all;
+        background-color: #F7F8F3; }
+      .header .header-flex_wrappr ul.main-nav ul {
+        position: absolute;
+        display: none; }
+        .header .header-flex_wrappr ul.main-nav ul li {
+          width: 250px;
+          float: none;
+          display: list-item;
+          position: relative; }
     @media (max-width: 48em) {
       .header .header-flex_wrappr ul.main-nav.show {
         display: flex;
@@ -260,11 +306,6 @@ p {
           cursor: pointer; } }
       .header .header-flex_wrappr #hamburger:focus {
         outline: none; }
-  .header .main-nav a {
-    color: #34495e;
-    font-size: .99em; }
-  .header .main-nav a:hover {
-    color: #718daa; }
 
 /*--------------------------------------------------------------
 # Footer -  Contact section

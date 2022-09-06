@@ -2,6 +2,7 @@
 	z-index: 999;
     position: fixed;
     width: 100%;
+	top:0;
 
 	.header-flex_wrappr {
 		position: relative;
@@ -47,14 +48,18 @@
 	
 		ul.main-nav {
 			display: flex;
-			width: 65%;
+			width: 45%;
 			justify-content: space-around;		
 			
 	
 			li{
+				position: relative;
 				list-style: none;
+				display: inline-block;
 			}
 			a {
+				color: #34495e;
+				padding: 1rem 2rem;
 				text-decoration: none;
 				display: block;
 				text-transform: uppercase;
@@ -63,7 +68,8 @@
 				transition: ease-in 0.2s all;
 	
 				&:hover{
-					color:$color-secondary;
+					background: $color-primary;
+					color:$color-text-secondary;
 					transition: ease-out 0.2s all;
 				}
 			}
@@ -71,6 +77,23 @@
 			@include respond(tab-port) {
 				display: none;
 			}
+
+			li:hover > ul{
+				display: block;
+				transition: ease-out 0.2s all;
+				background-color:$color-background;
+			}
+			ul{
+				position: absolute;
+				display: none;
+				li{
+					width: 250px;
+					float: none;
+					display: list-item;
+					position: relative;
+				}
+			}
+			
 		}
 	
 		ul.main-nav.show{
@@ -110,23 +133,77 @@
 		
 	
 	}
+
 	
+	// .main-nav a {
+	// 	color: #34495e;
+	// 	font-size: .99em;
+	// }
 	
-	
-	
-	
-	
-	.main-nav a {
-		color: #34495e;
-		font-size: .99em;
-	}
-	
-	.main-nav a:hover {
-		color: #718daa;
-	}
-	
-	
+	// .main-nav a:hover {
+	// 	color: #718daa;
+	// }
 	
 
 }	
 
+// Testcss
+// .dropdwn{
+// 	margin: 0 auto;
+
+// 	nav{
+// 		height: 100px;
+// 		background: #34495e;
+// 		box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+
+// 		.logo1{
+// 			padding: 0 0 0 85px;
+// 			width:200px;
+// 			height:auto;
+// 		}
+// 	}
+
+
+// 	nav	ul{
+// 			padding: 0;
+// 			margin: 0;
+// 			float: right;
+// 			margin-right: 3rem;
+// 	}
+
+// 	nav ul li{
+// 		background: #2c3e50;
+// 		position: relative;
+// 		list-style: none;
+// 		display: inline-block;
+// 	}
+
+// 	nav ul li a{
+// 		display: block;
+// 		padding: 0 15px;
+// 		color: #fff;
+// 		text-decoration: none;
+// 		line-height: 60px;
+// 		font-size: 20px;
+// 	}
+// 	nav ul li a:hover{
+// 		background: #243342;
+// 	}
+// 	nav ul ul{
+// 		position: absolute;
+// 		top: 6rem;
+// 		display: none;
+// 	}
+
+// 	nav ul li:hover > ul{
+// 		display: block;
+// 	}
+	
+// 	nav ul ul li {
+// 		width: 150px;
+// 		float: none;
+// 		display: list-item;
+// 		position: relative;
+// 	}
+			
+// }
