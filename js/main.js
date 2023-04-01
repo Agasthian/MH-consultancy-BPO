@@ -7,7 +7,7 @@ hamburger.addEventListener('click', ()=>{
 })
 
 // Animate on Scroll - library - config
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 //Swiper js
 var swiper = new Swiper(".bg-slider-thumbs", {

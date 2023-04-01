@@ -29,17 +29,23 @@
             }
             .text-content{
                 position: absolute;
-                top: 25%;
+                top: 45%;
+                left: -8%;
                 color:#fff;
                 margin:0 200px;
                 transition: 0.3s ease;
 
+                @include respond(small) {
+                    top: 52%;
+                    left: -23rem;
+                }
+
                 .title{
-                    font-size: 4rem;
+                    font-size: 3rem;
                     font-weight: 600;
                     color: #fff;
                     text-shadow: $text-shadow;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     transform: translateY(-50px);
                     opacity: 0;
                 }
@@ -55,6 +61,10 @@
                     box-shadow: $box-shadow;
                     transform: translateX(-80px);
                     opacity: 0;
+
+                    @include respond(small) {
+                        display: none;
+                    }
                 }
 
                 .read-btn{
@@ -81,6 +91,10 @@
                         font-size: 1.8rem;
                         transition: 0.3s ease;
                     }
+                    
+                }
+
+                @include respond(tab-port) {
                     
                 }
             }

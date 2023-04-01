@@ -8,8 +8,9 @@
     margin-top: 7rem;
     margin-bottom: 7rem;
     display: flex;
-    @include respond(small) {
+    @include respond(tab-port) {
         flex-direction: column;
+        margin-top: 60rem;
     }
 
     &_left{

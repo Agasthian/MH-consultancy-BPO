@@ -29,6 +29,7 @@
 		.logo {
 			//  padding:14px 20px 15px 35px;
 			background: $color-primary;
+			padding: 1rem;
 			//  border-bottom-right-radius: 25px;
 			@include respond(tab) {
 				// padding: 33px 5px;
@@ -39,9 +40,8 @@
 	
 			img{
 				width: 90px;
-				// width: 80%;
 				@include respond(small) {
-					width: 150px;	
+					width: 100px;	
 				}
 			}
 		}
@@ -130,23 +130,17 @@
 				outline: none;
 			}
 		}
-		
-	
-	}
-
-	
-	// .main-nav a {
-	// 	color: #34495e;
-	// 	font-size: .99em;
-	// }
-	
-	// .main-nav a:hover {
-	// 	color: #718daa;
-	// }
-	
-
+	}	
 }	
 
+// .main-nav a {
+// 	color: #34495e;
+// 	font-size: .99em;
+// }
+
+// .main-nav a:hover {
+// 	color: #718daa;
+// }
 // Testcss
 // .dropdwn{
 // 	margin: 0 auto;

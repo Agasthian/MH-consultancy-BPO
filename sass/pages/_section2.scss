@@ -13,8 +13,12 @@
         align-items: center;
         height: 100%;
         flex-wrap: wrap;
+        color:#FFF;
     }
 
+    img{
+        width:120px;
+    }
     @include respond(small) {
         height: 30rem;
 

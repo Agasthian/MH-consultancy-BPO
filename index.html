@@ -15,7 +15,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="./favicon1.ico" type="image/gif" sizes="16x16">
+    <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,13 +36,13 @@
         <div class="header-flex_wrappr">
             <figure class="logo">
                 <a href="/">
-                    <img src="./img/Logo/Logo3.png" alt="logo">
+                    <img src="./img/Logo/logo.png" alt="logo">
                 </a>
             </figure>
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
-            <ul class="main-nav show" id="nav-ul">
+            <ul class="main-nav" id="nav-ul">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="#services">Services</a>
@@ -94,33 +94,29 @@
       <div class="swiper-slide dark-layer">
         <img src="./img/slide1.jpg" />
         <div class="text-content">
-            <h2 class="title">Title 1</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
-            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+            <h2 class="title">Expert Solutions, Outstanding Service.</h2>
+            <p>Our inbound services provide professional call handling, customer support, and efficient resolution of inquiries, ensuring customer satisfaction and loyalty.</p>
         </div>
       </div>
       <div class="swiper-slide dark-layer">
         <img src="./img/Slide 2.webp" />
         <div class="text-content">
-            <h2 class="title">Title 2</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
-            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+            <h2 class="title">Credible. Professional. Quality.</h2>
+            <p>We provide professional and quality services through skilled personnel, cutting-edge technology, and rigorous quality control measures, ensuring customer satisfaction.</p>
         </div>
       </div>
       <div class="swiper-slide dark-layer">
         <img src="./img/slide3.jpg" />
         <div class="text-content">
-            <h2 class="title">Title 3</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
-            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+            <h2 class="title">Better Results for better Connections</h2>
+            <p>Our strong connections with clients and customers lead to better communication, higher productivity, and superior results in all our services.</p>
         </div>
       </div>
       <div class="swiper-slide dark-layer">
         <img src="./img/slide4.jpg" />
         <div class="text-content">
-            <h2 class="title">Title 4</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
-            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+            <h2 class="title">Success starts with satisfied customers</h2>
+            <p>Our success is defined by the satisfaction of our customers, achieved through personalized attention, timely solutions, and continuous improvement.</p>
         </div>
       </div>
 
@@ -141,16 +137,29 @@
         </section>
 
 
-        //
-
         <!-- Section 2 -->
         <section class="client-section">
             <div class="client-section_flex-wrapper">
-                <img src="./img/clients-logo-1.png" alt="Client" data-aos="fade-right" data-aos-duration="2000">
-                <img src="./img/clients-logo-2.png" alt="Client 2" data-aos="fade-right" data-aos-duration="2000">
-                <img src="./img/clients-logo-3.png" alt="Client 3" data-aos="fade" data-aos-duration="2000" data-aos-delay="200">
-                <img src="./img/clients-logo-4.png" alt="Client 4"data-aos="fade-left" data-aos-duration="2000">
-                <img src="./img/clients-logo-5.png" alt="Client 5"data-aos="fade-left" data-aos-duration="2000">
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <img src="./img/icons/email.png" alt="Morpheus hunt consultancy">
+                    <p>Chat & Email</p>
+                </div>
+                <div class="telecaller" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="./img/icons/tele.png" >
+                    <p>InBound Services</p>
+                </div>
+                <div data-aos="fade" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="./img/icons/Chat.png">
+                    <p>Outbound Service</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <img src="./img/icons/research.png" >
+                    <p>Market Research</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <img  style="width: 100px;" src="./img/icons/voice2.png">
+                    <p>IT/ITeS</p>
+                </div>
             </div>
         </section>
 
@@ -168,13 +177,13 @@
                     <div class="solutions-section_4boxes_box1"  data-aos="fade-left" data-aos-duration="2000">
                         <div class="card">
                             <img src="./img/icon-4.png" alt="icon 4"/>
-                            <p>Inbound Services</p>
+                            <p>Inbound <br/> Services</p>
                         </div>
                     </div>
                     <div class="solutions-section_4boxes_box2"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="250">
                         <div class="card">
                             <img src="./img/icon-5.png" alt="icon 4"/>
-                            <p>Outbound Services</p>
+                            <p>Outbound <br/> Services</p>
                         </div>
                     </div>
                     <div class="solutions-section_4boxes_box3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="450">
@@ -290,16 +299,9 @@
                 <div class="itServices-section-flxWrapper_left" data-aos="fade-right"   data-aos-duration="2000"  data-aos-delay="700">
                     <span class="micro-heading">Trusted Employees</span>
                     <h2>Voice Process</h2>
-                    <p>IT skills are one of the most demanded ones in today’s connected world. Skilled manpower is required both in IT industry as well as in IT function of core industries. We at ScopeHR specialize in providing best IT resources in various domains that can be productive from day one and thus can assist your business in delivering critical milestones on time.</p>
-                    <p>We have expetise in working for & closing positions in the following skillsets Java, .Net, React, iOS Developers, Android Developers, Manual & Automation Testing, Big Data, Devops, Cloudops, Block Chain, MEAN & MERN stack, Web Development, Angular, Mobile Application development, Php framework & IT support services etc.</p>
-                    
-                    <ul>
-                        <li>Headhunting as the primary mode of spotting potential candidates.</li>
-                        <li>Experienced recruiters team for leadership hiring.</li>
-                        <li>Expertise in catering to the most niche positions.</li>
-                        <li>Time-bound hiring approach, most fitting CVs.</li>
-                        <li>Savvy in hiring through headhunting, Professional & Social networks</li>
-                    </ul>
+                    <p>Voice process is a critical component of BPO services, requiring skilled agents to handle customer interactions via phone. Exceptional communication skills, language proficiency, and product knowledge are vital for delivering high-quality services. With increasing customer experience focus, providing exceptional voice process services is now a competitive advantage.</p>
+                    <p>Voice process needs skilled agents for efficient phone-based customer service, enhancing experience, and driving business growth in this competitive market.</p>
+
                 </div>
                 <div class="itServices-section-flxWrapper_right" data-aos="fade-right"  data-aos-duration="2000" data-aos-delay="400">
                     <img src="" alt="">
@@ -312,18 +314,10 @@
             </div>
             <div class="nonitServices-section_right"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
                 <span class="micro-heading">Trusted Employees</span>
-                <h2>International Services</h2>
+                <h2>Market Research</h2>
 
-                <p>Non IT Recruitment requires a lot of understanding of various domains and industry expertise in hiring resources. We are catering to a wide range of Non-IT Industries. We have industry specialist recruiters who work on your recruitments.</p>
-                <p>We have demonstrated track record for recruiting for various industries such us Automobile, Process Industry, Manufacturing, Chemicals, Power, Real Estate, Infra, Education, Logistics, Aerospace, Telecom, Pharma, Healthcare, Hospitality, Banking & BSFI, etc.</p>
-                <ul>
-                    <li>Headhunting as the primary mode of spotting potential candidates.</li>
-                    <li>Experienced recruiters team for leadership hiring.</li>
-                    <li>Expertise in catering to the most niche positions.</li>
-                    <li>Time-bound hiring approach, most fitting CVs.</li>
-                    <li>Savvy in hiring through headhunting, Professional & Social networks</li>
-                </ul>
-
+                <p>As a leading BPO company, we specialize in market research services that provide valuable insights to businesses. Our research team leverages various methods to gather data on markets, customers, competitors, and trends. We use advanced analytical tools to analyze and interpret data, helping businesses make informed decisions and gain a competitive edge.</p>
+                <p>Our market research services encompass market sizing, customer analysis, competitor analysis, brand positioning, and more. With our customized research solutions, businesses can stay ahead of the curve and drive growth. Trust us for accurate, reliable, and timely market research services that provide a strategic advantage.</p>
             </div>
         </section>
 
@@ -358,32 +352,31 @@
                 
                 <div class="footer-section_top">
                     <div class="footer-section_top_widget1">
-                        <h4>Office</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
-                        <p style='margin-top: 2rem;'>Morpheus Consultancy, <br/>2nd Street,Egmore, <br/>Chennai, India</p>
+                        <h4>Address</h4>
+                        <p>Morpheus Hunt Consulting pvt ltd, <br/>
+                            Suite 1E,ELCANSO Complex,<br/>
+                            No:10 casa major road,<br/>
+                            Egmore, Chennai 600008, <br/>
+                            India</p>
                     </div>
                     <div class="footer-section_top_widget2">
                         <h4>Useful links</h4>
                         <p>About us.</p>
-                        <p>Solutions.</p>
-                        <p>Employeers.</p>
-                        <p>Job Seekers.</p>
-                        <p>Intership.</p>
+                        <p>Market Research.</p>
+                        <p>Voice Process.</p>
                         <p>Contact us.</p>
                     </div>
                     <div class="footer-section_top_widget3">
-                        <h4>For Employeers</h4>
-                        <p>+91-9566-123-123.</p>
-                        <p>contact@morpheus.in</p>
-                        <h4 style='margin-top: 2rem;'>For Employees</h4>
-                        <p>+91-9566-456-456.</p>
-                        <p>contact@morpheus.in</p>
+                        <h4>Phone Number </h4>
+                        <p>+91-8646-007-007.</p>
+                        <p>+91-7305-654-701.</p>
+                        <p>admin@morpheushunt.co.in</p>
                     </div>
                 </div>
                 <div class="footer-section_bottom">
                     <hr>
                     <div class="footer-section_bottom_content">
-                        <p>©2021 Morpheus Consultancy, All Rights reserved</p>
+                        <p>©2023 Morpheus Consultancy, All Rights reserved</p>
                         <p>Terms & Conditions Site Map</p>
                     </div>
                 </div>

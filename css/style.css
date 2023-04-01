@@ -238,12 +238,13 @@ p {
       .header .header-flex_wrappr {
         min-height: 8vh; } }
     .header .header-flex_wrappr .logo {
-      background: #ac7b50; }
+      background: #ac7b50;
+      padding: 1rem; }
       .header .header-flex_wrappr .logo img {
         width: 90px; }
         @media (max-width: 26.62em) {
           .header .header-flex_wrappr .logo img {
-            width: 150px; } }
+            width: 100px; } }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
       width: 45%;
@@ -316,7 +317,8 @@ p {
   width: 100%;
   position: relative; }
   .footer-section p {
-    text-align: left; }
+    text-align: left;
+    color: #2e2e2e; }
   .footer-section_bg-img {
     background-image: url("../../img/pattern-11.png");
     position: absolute;
@@ -342,7 +344,7 @@ p {
       .footer-section_top {
         padding: 4rem 0; } }
     .footer-section_top h4 {
-      color: #111;
+      color: #2e2e2e;
       font-size: 2rem;
       font-weight: 700; }
     .footer-section_top_widget1 {
@@ -352,7 +354,7 @@ p {
     .footer-section_top_widget3 {
       flex: 1 0 33%; }
   .footer-section_bottom hr {
-    border: 1px solid  #333; }
+    border: 1px solid  #2e2e2e; }
   .footer-section_bottom_content {
     display: flex;
     justify-content: space-between; }
@@ -384,16 +386,21 @@ p {
         pointer-events: none; }
       .landing .bg-slider .swiper-slide .text-content {
         position: absolute;
-        top: 25%;
+        top: 45%;
+        left: -8%;
         color: #fff;
         margin: 0 200px;
         transition: 0.3s ease; }
+        @media (max-width: 26.62em) {
+          .landing .bg-slider .swiper-slide .text-content {
+            top: 52%;
+            left: -23rem; } }
         .landing .bg-slider .swiper-slide .text-content .title {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 600;
           color: #fff;
           text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           transform: translateY(-50px);
           opacity: 0; }
         .landing .bg-slider .swiper-slide .text-content p {
@@ -408,6 +415,9 @@ p {
           box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
           transform: translateX(-80px);
           opacity: 0; }
+          @media (max-width: 26.62em) {
+            .landing .bg-slider .swiper-slide .text-content p {
+              display: none; } }
         .landing .bg-slider .swiper-slide .text-content .read-btn {
           border: none;
           outline: none;
@@ -486,7 +496,10 @@ p {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    color: #FFF; }
+  .client-section img {
+    width: 120px; }
   @media (max-width: 26.62em) {
     .client-section {
       height: 30rem; }
@@ -592,20 +605,26 @@ p {
   height: 100vh;
   margin-top: 5rem; }
   .itServices-section-flxWrapper {
-    display: flex; }
-    @media (max-width: 26.62em) {
+    display: flex;
+    gap: 2rem; }
+    @media (min-width: 48.06em) {
       .itServices-section-flxWrapper {
-        flex-direction: column; } }
+        padding-top: 5rem; } }
     .itServices-section-flxWrapper_left {
-      padding: 3rem 5rem;
       flex: 1 1 60%; }
-      @media (max-width: 26.62em) {
+      @media (min-width: 48.06em) {
         .itServices-section-flxWrapper_left {
+          flex: 1 1 100%;
           padding: 3rem 0; } }
     .itServices-section-flxWrapper_right {
       background: url("../../img/section4img.png") no-repeat;
       background-position: center;
-      flex: 1 1 40%; }
+      flex: 1 1 40%;
+      height: 75vh; }
+      @media (min-width: 48.06em) {
+        .itServices-section-flxWrapper_right {
+          flex: 1 1 100%;
+          height: 84vh; } }
   .itServices-section p {
     margin-bottom: 2rem; }
 
@@ -617,9 +636,10 @@ p {
   margin-top: 7rem;
   margin-bottom: 7rem;
   display: flex; }
-  @media (max-width: 26.62em) {
+  @media (max-width: 48em) {
     .nonitServices-section {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 60rem; } }
   .nonitServices-section_left {
     flex: 1 1 40%;
     background: url("../../img/10.jpg") no-repeat;

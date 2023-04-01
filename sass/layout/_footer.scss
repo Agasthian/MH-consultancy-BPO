@@ -8,8 +8,10 @@
     min-height: 45rem;
     width: 100%;
     position: relative;
+    
     p{
         text-align: left;
+        color: #2e2e2e;
     }
 
     &_bg-img{
@@ -41,7 +43,7 @@
         }
         
         h4{
-            color: #111;
+            color: #2e2e2e;
             font-size: 2rem;
             font-weight: 700;
         }
@@ -59,7 +61,7 @@
 
     &_bottom{
         hr{
-            border:1px solid  #333;
+            border:1px solid  #2e2e2e;
         }
         &_content{
             display: flex;
