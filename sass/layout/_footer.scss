@@ -11,7 +11,7 @@
     
     p{
         text-align: left;
-        color: #2e2e2e;
+        color: #fff;
     }
 
     &_bg-img{
@@ -33,7 +33,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
         padding-top: 10rem;
         color: $color-text-primary;
         font-size: 1.6rem;
@@ -43,7 +42,7 @@
         }
         
         h4{
-            color: #2e2e2e;
+            color: #282828;
             font-size: 2rem;
             font-weight: 700;
         }
@@ -61,7 +60,11 @@
 
     &_bottom{
         hr{
-            border:1px solid  #2e2e2e;
+            border:1px solid  #282828;
+        }
+        img{
+            width: 3rem;
+            margin-top: 0.5rem;
         }
         &_content{
             display: flex;

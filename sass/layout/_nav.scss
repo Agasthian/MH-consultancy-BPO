@@ -29,7 +29,7 @@
 		.logo {
 			//  padding:14px 20px 15px 35px;
 			background: $color-primary;
-			padding: 1rem;
+			padding: 0.25rem 1rem;
 			//  border-bottom-right-radius: 25px;
 			@include respond(tab) {
 				// padding: 33px 5px;
@@ -50,7 +50,7 @@
 			display: flex;
 			width: 45%;
 			justify-content: space-around;		
-			
+			z-index: 1;
 	
 			li{
 				position: relative;
@@ -130,7 +130,28 @@
 				outline: none;
 			}
 		}
-	}	
+	}
+	
+	.nav-right{			
+		position: absolute;
+		bottom: 1rem;
+		right: 6rem;
+		color: $color-primary;
+		
+		a{
+			text-decoration: none;
+		}
+		#linked,#watsap{
+			width: 20px;
+			
+		}
+		&_contact{
+
+			@include respond(tab-port) {
+				display: none;
+			}
+		}
+	}
 }	
 
 // .main-nav a {
