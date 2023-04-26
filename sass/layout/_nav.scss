@@ -12,8 +12,8 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 13vh;
-		-webkit-box-shadow: 0 0 20px 0 #cecece;
-		box-shadow: 0 0 20px 0 #cecece;
+		-webkit-box-shadow: 0 0 6px 0 #505050;
+		box-shadow:  0 0 6px 0 #505050;
 	
 		@include respond(small) {
 			min-height: 8vh;
@@ -59,7 +59,8 @@
 			}
 			a {
 				color: #34495e;
-				padding: 1rem 2rem;
+				padding: 0.6rem 1.5rem;
+				border-radius: 3px;
 				text-decoration: none;
 				display: block;
 				text-transform: uppercase;
@@ -82,6 +83,7 @@
 				display: block;
 				transition: ease-out 0.2s all;
 				background-color:$color-background;
+				z-index: 1;
 			}
 			ul{
 				position: absolute;

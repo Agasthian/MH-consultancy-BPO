@@ -1,12 +1,15 @@
 /*********** Container ***********/
 .container{
     max-width: 124rem;
-    padding: 0 10rem;
+    padding: 0 8rem;
     margin: 0 auto;
     width: 100%;
 
     @include respond(tab-port) {
         padding:  0 8rem;
+    }
+    @include respond(small) {
+        padding:  0 6rem;
     }
 }
 .container-short{

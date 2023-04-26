@@ -47,6 +47,7 @@
         margin-top: 5rem;
         display: flex;
         gap: 3rem;
+        align-items: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
         @include respond(small) {
@@ -68,8 +69,8 @@
                 left:6rem;
             }
             @include respond(small) {
-                height: 100px;
-                width: 180px;
+                height: 120px;
+                
                 top:22rem;
             }
 

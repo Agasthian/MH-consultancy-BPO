@@ -2,27 +2,29 @@
 # Section5 -  section
 --------------------------------------------------------------*/
 .nonitServices-section{
-    
-
-    height: 80vh;
     margin-top: 7rem;
     margin-bottom: 7rem;
     display: flex;
+    gap: 2rem;
     @include respond(tab-port) {
-        flex-direction: column;
-        margin-top: 60rem;
+        flex-direction: column;        
     }
 
     &_left{
         flex: 1 1 40%;
         background: url('../../img/10.jpg')no-repeat;
         background-size: contain;
- 
+        @include respond(tab-port) {
+            display: none;
+        }
      }
      &_right{
          
          flex: 1 1 60%;
          padding: 4rem 5rem;
+        @include respond(tab-port) {
+        padding:0;
+        }
      }
 
      p{
