@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+# Contact Us page
+--------------------------------------------------------------*/
+.contact {
+    margin-top: 14rem;
+    @include respond(small) {
+        margin-top: 14vh;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    
+
+    &_form{
+        background-color: lightgray;
+        background-color: #fff;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        border-radius: 7px;
+        box-shadow: 0rem 0px 8px #3333;
+        display: flex;
+        flex-wrap: wrap;
+        @include respond(small) {
+            flex-direction: column;
+        }
+
+        &_left{
+            background-color: $color-primary;
+            border-radius: 7px;
+            flex: 0 0 35%;
+            height: 50rem;
+            padding: 2rem 3rem;
+            color:#fff;
+            h3{
+                color:#fff;
+                margin: 2rem 0;
+            }
+
+            &_address{
+                margin-top: 4rem;
+                &_cont{
+                    display: flex;
+                    column-gap: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        &_right{
+            flex: 1 1 0%;
+            padding: 1.5rem 3rem;
+
+            .form_wrapper{
+                form{
+                    input{
+                        height: 3rem;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-image: initial;
+                        border-bottom: 1px solid grey;
+                        font-family: inherit;
+                        font-size: 1.4rem;
+                        width: 100%;
+                        background-color: transparent;
+                        margin-bottom: 2rem;
+                    }
+                    textarea{
+                        height: 5rem;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-image: initial;
+                        border-bottom: 1px solid grey;
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

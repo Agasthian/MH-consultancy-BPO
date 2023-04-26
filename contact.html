@@ -58,14 +58,81 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
-    
+        <div class="nav-right">
+            <div class="nav-right_contact">
+                <i class="fas fa-envelope-open-text"></i> admin@morpheushunt.co.in | 
+                <i class="fas fa-phone-square-alt"></i> +91-7305-654-701 | 
+                <a href="https://www.linkedin.com/company/morpheus-hunt-consulting-pvt-ltd/" target="_blank">
+                    <img src="./img/icons/Linkedin.png" id="linked" alt="mh consultancy">
+                </a> |
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/7305654701" target="_blank">
+                    <img src="./img/icons/whatsapp.png" id="watsap" alt="Chat on WhatsApp">
+                </a>
+            </div>
+        </div>    
         
     </header><!-- Navigation ends -->
 
      <!-- Main section Starts -->
     <main>
-        <div class="heading_wrapper">
+        <div class="contact">
             <h1>Contact us</h1>
+            <p style="text-align: center;">Any questions or remarks ? Write us a message!</p>
+
+            <div class="container contact_form ">
+                <div class="contact_form_left">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 2rem;">Fill up the form and out Team will get back to you within 24 hours.</p>
+
+                    <div class="contact_form_left_address">
+                        <div class="contact_form_left_address_cont">
+                            <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+                            <div class="text"><p>admin@morpheushunt.co.in</p></div>
+                        </div>
+                        <div class="contact_form_left_address_cont">
+                            <div class="icon"><i class="fas fa-phone-square-alt"></i></div>
+                            <div class="text">
+                                <p>+91-8646-007-007.</p>
+                                <p>+91-7305-654-701.</p>
+                            </div>
+                        </div>
+                        <div class="contact_form_left_address_cont">
+                            <div class="icon"><i class="fas fa-phone-square-alt"></i></div>
+                            <div class="text">
+                                <p>Morpheus Hunt Consulting pvt ltd, <br/>
+                                Suite 1E,ELCANSO Complex,<br/>
+                                No:10 casa major road,<br/>
+                                Egmore, Chennai 600008, <br/>
+                                India</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div><!-- End of left side -->
+                <div class="contact_form_right">
+                    <div class="form_wrapper">
+                        <form name="morContact" action="/submit-contact-info" method="POST" data-netlify="true"
+                        data-netlify-honeypot="bot-field">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button class="btn btn--orange" type="submit">Submit</button>                          
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     
 
