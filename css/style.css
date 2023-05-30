@@ -433,7 +433,6 @@ p, ul {
           color: #fff;
           text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
           margin-bottom: 10px;
-          transform: translateY(-50px);
           opacity: 0; }
         .landing .bg-slider .swiper-slide .text-content p {
           max-width: 550px;
@@ -447,6 +446,9 @@ p, ul {
           box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
           transform: translateX(-80px);
           opacity: 0; }
+          .landing .bg-slider .swiper-slide .text-content p span {
+            font-size: 2.5rem;
+            font-weight: 600; }
           @media (max-width: 26.62em) {
             .landing .bg-slider .swiper-slide .text-content p {
               display: none; } }
